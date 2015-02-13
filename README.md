@@ -2,12 +2,12 @@
 		var Hello = React.createClass ({
 			render: function(){
 				return <div>
-									<h1> Now is {this.props.now}</h1>
-								</div>;
+						<h1> Now is {this.props.now}</h1>
+						</div>;
 			}
 		});
 		React.renderComponent(<Hello now={new Date().toString()} />,
-			document.getElementById('container'));
+		document.getElementById('container'));
 
 ```
 
@@ -22,7 +22,7 @@ You are declaring a ```React Component```.
 ```
 React.createClass
 ```
-You access and invoke the function createClass
+You access and invoke the function createClass.
 
 The ```createClass``` needs a requirement that is an objet that at least defines a ```render function```.
 Within the render function you need to ```return``` some markup (for this reason you use ```jsx```).
