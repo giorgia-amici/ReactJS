@@ -13,13 +13,16 @@
 
 ####**Explanation:**
 
-```var Hello```
+```
+var Hello
+
+```
+
 You are declaring a ```React Component```.
 
 ```
 React.createClass
 ```
-
 You access and invoke the function createClass
 
 The 
@@ -30,9 +33,7 @@ createClass
 needs a requirement that is an objet that at least defines a ```render function```.
 Within the render function you need to ```return``` some markup (for this reason you use ```jsx```).
 
-Now you need to ```render``` your React component (in this case ```Hello```) by using the 
-
-```reanderComponent```
+Now you need to ```render``` your React component (in this case ```Hello```) by using the ```renderComponent```
 function and passing the needed parameters (in this case ```now```).
 This creates the markups and insert it into the DOM
 
