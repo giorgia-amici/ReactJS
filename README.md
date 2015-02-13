@@ -14,7 +14,7 @@
 ####**Explanation:**
 
 ```var Hello```
-You are declaring a ```React Component```
+You are declaring a ```React Component```.
 
 ```React.createClass```
 You access and invoke the function createClass
