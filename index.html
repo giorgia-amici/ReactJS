@@ -5,8 +5,20 @@
 	<title></title>
 </head>
 <body>
-	
-	<script type="text/javascript" src="bower_components/react/react.js"></script>
+	<div id="container"> </div>
+	<script type="text/jsx">
+	/** @jsx React.DOM */
+		var Hello = React.createClass({
+			render: function(){
+				return <div>
+									<h1> Now is {this.props.now}</h1>
+								</div>;
+			}
+		});
+		React.renderComponent(<Hello now={new Date().toString()} />,
+			document.getElementById('container'));
+	</script>
+	<script type="text/javascript" src="react.js"></script>
 	<script type="text/javascript" src="bower_components/react/JSXTransformer.js"></script>
 </body>
 </html>
