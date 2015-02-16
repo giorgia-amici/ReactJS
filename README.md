@@ -15,6 +15,7 @@
 
 ```
 var Hello
+
 ```
 
 You are declaring a ```React Component```.
@@ -32,3 +33,5 @@ function and passing the needed parameters (in this case ```now```).
 This creates the markups and insert it into the DOM
 
 The second argument to the renderComponent is the DOM element to render our component into and to specify that you need to use plain JS.
+
+##Aim of this project
