@@ -1,3 +1,8 @@
+#React.js
+##Basic tutorial with explanation
+
+
+
 ```javascript
 		var Hello = React.createClass ({
 			render: function(){
@@ -25,7 +30,7 @@ React.createClass
 ```
 You access and invoke the function createClass.
 
-The ```createClass``` needs a requirement that is an objet that at least defines a ```render function```.
+The ```createClass``` needs a requirement that is an object that at least defines a ```render function```.
 Within the render function you need to ```return``` some markup (for this reason you use ```jsx```).
 
 Now you need to ```render``` your React component (in this case ```Hello```) by using the ```renderComponent```
@@ -34,4 +39,16 @@ This creates the markups and insert it into the DOM
 
 The second argument to the renderComponent is the DOM element to render our component into and to specify that you need to use plain JS.
 
-##Aim of this project
+When you compile the code in plain JS from JSX, it will look like this:
+
+```javascript
+		var Hello = React.createClass ({
+			render: function(){
+				return React.DOM.div(null, 
+									React.DOM.h1(
+									null, "Now is " this.prop.now)
+				);
+			}
+		});
+
+```
