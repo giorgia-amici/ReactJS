@@ -1,0 +1,34 @@
+Some other notes for myself:
+
+
+var post = {
+	title: 'My First Post',
+	content: 'This is my real first post using React',
+	comments: ['react is nice', 'angular is better', 'getting exposed to both is best']
+};
+
+var Post = React.createClass({
+	render: function(){
+	return(
+		<div>
+			<h1>{this.props.data.title}</h1>
+			<p> {this.props.data.content}</p>
+			<h2> Here are the comments of your post </h2>
+
+			<Comment content={this.props.data.comments[0]}/>
+			<Comment content={this.props.data.comments[1]}/>
+			<Comment content={this.props.data.comments[2]}/>
+			</div>);
+	}
+});
+
+var Comment = React.createClass({
+	render: function(){
+		return <div>{this.props.content}</div>
+	}
+});
+
+React.renderComponent(
+	<Post data={post} />,
+	document.body
+);
