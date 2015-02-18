@@ -61,7 +61,8 @@ When you compile the code in plain JS from JSX, it will look like this:
 
 ```
 ##Nesting Components
-```
+
+```javascript
 var Inner = React.createClass({
 	render: function(){
 	return <h3> Inner </h3>
@@ -78,3 +79,4 @@ var Outer = React.createClass({
 });
 
 React.renderComponent(<Outer />, document.body);
+```
