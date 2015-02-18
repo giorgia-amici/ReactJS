@@ -2,6 +2,14 @@
 ##Basic tutorial with explanation
 
 
+###Aim of this project
+
+I am gonna reproduce a catalogue ordered by Author. For each of the authors you will have a list of books to choose from. This simple project will allow me to understand React's functionality and how it differs from an MVC.
+
+
+###General taste of the syntax.
+
+The following snippet is the React version of "Hello world":
 
 ```javascript
 		var Hello = React.createClass ({
@@ -52,3 +60,4 @@ When you compile the code in plain JS from JSX, it will look like this:
 		});
 
 ```
+
