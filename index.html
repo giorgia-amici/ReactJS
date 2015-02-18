@@ -7,18 +7,20 @@
 	<link href="style/main.css" rel="stylesheet">
 </head>
 <body>
-	<div id="container"> </div>
-	<script type="text/jsx">
-	/** @jsx React.DOM */
-		var Hello = React.createClass({
-			render: function(){
-				return <div>
-									<h1> Now is {this.props.now}</h1>
-								</div>;
-			}
-		});
-		React.renderComponent(<Hello now={new Date().toString()} />,
-			document.getElementById('container'));
+	<div id="app"> 
+
+	</div>
+	<!-- // <script type="text/jsx"> -->
+	<!-- // /** @jsx React.DOM */ -->
+	<!-- // 	var Hello = React.createClass({ -->
+	<!-- // 		render: function(){ -->
+	<!-- // 			return <div> -->
+	<!-- // 								<h1> Now is {this.props.now}</h1> -->
+	<!-- // 							</div>; -->
+	<!-- // 		} -->
+	<!-- // 	}); -->
+	<!-- // 	React.renderComponent(<Hello now={new Date().toString()} />, -->
+	<!-- // 		document.getElementById('container')); -->
 	</script>
 	<script src="bower_components/react/react.js"></script>
 	<script src="bower_components/react/JSXTransformer.js"></script>

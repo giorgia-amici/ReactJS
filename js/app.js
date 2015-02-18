@@ -4,7 +4,14 @@
 
 	var Quiz = React.createClass({
 		render: function(){
-			return <div></div>;
+			return <div>test</div>;
 		}
 	});
+
+	React.renderComponent(
+		<Quiz data={"foo"}/>,
+		document.getElementById('app')
+	);
+
+
 })();
