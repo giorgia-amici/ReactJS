@@ -60,4 +60,21 @@ When you compile the code in plain JS from JSX, it will look like this:
 		});
 
 ```
+##Nesting Components
+```
+var Inner = React.createClass({
+	render: function(){
+	return <h3> Inner </h3>
+}
+});
 
+var Outer = React.createClass({
+	render: function(){
+	return <div>
+						<h1> Outer </h1>
+						<Inner />
+					</div>
+}
+});
+
+React.renderComponent(<Outer />, document.body);

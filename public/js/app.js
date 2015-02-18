@@ -4,7 +4,7 @@
 
 	var Quiz = React.createClass({
 		render: function(){
-			return <div>test</div>;
+			return <div>test {' '} {this.props.data}</div>;
 		}
 	});
 
