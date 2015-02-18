@@ -15,9 +15,9 @@ var Post = React.createClass({
 			<p> {this.props.data.content}</p>
 			<h2> Here are the comments of your post </h2>
 
-			<Comment content={this.props.data.comments[0]}/>
-			<Comment content={this.props.data.comments[1]}/>
-			<Comment content={this.props.data.comments[2]}/>
+			{this.props.data.comments.map(function(comment){
+			return <Comment.content = {comment} />;
+			})}
 			</div>);
 	}
 });
