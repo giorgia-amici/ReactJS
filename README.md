@@ -95,4 +95,4 @@ var showState = React.createClass({
 
 ```
 **Differences between __props__ & __state__**
-<img src="./stateVSprops">
+<img src="./stateVSprops.png">
