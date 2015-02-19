@@ -94,5 +94,5 @@ var showState = React.createClass({
 });
 
 ```
-**Differences between __props__ & __state__
-<img src="stateVSprops">
+**Differences between __props__ & __state__**
+<img src="./stateVSprops">
