@@ -72,8 +72,8 @@ var Inner = React.createClass({
 var Outer = React.createClass({
 	render: function(){
 	return <div>
-						<h1> Outer </h1>
-						<Inner />
+					<h1> Outer </h1>
+					<Inner />
 					</div>
 }
 });
@@ -94,3 +94,5 @@ var showState = React.createClass({
 });
 
 ```
+**Differences between __props__ & __state__
+<img src="stateVSprops">

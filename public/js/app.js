@@ -21,7 +21,7 @@
 	});
 
 	React.renderComponent(
-		<Quiz books={['Cime tempestose', 'Dorian Grey', 'Ciao mare']}/>,
+		<Quiz books={['Cime tempestose', 'Dorian Grey', 'Ciao mare  ']}/>,
 		document.getElementById('app')
 	);
 
