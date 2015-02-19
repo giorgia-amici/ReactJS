@@ -80,3 +80,17 @@ var Outer = React.createClass({
 
 React.renderComponent(<Outer />, document.body);
 ```
+
+##State
+
+```
+var showState = React.createClass({
+	getInitialState: function(){
+	return {age: 25};
+},
+	render: function(){
+	return <div> my age is {this.state.age} </div>;
+}
+});
+
+```
