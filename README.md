@@ -83,7 +83,7 @@ React.renderComponent(<Outer />, document.body);
 
 ##State
 
-```
+```javascript
 var showState = React.createClass({
 	getInitialState: function(){
 	return {age: 25};
