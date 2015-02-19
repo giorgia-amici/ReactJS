@@ -96,3 +96,16 @@ var showState = React.createClass({
 ```
 **Differences between __props__ & __state__**
 <img src="./stateVSprops.png">
+
+
+##Adding Validators and custom validation functions
+
+```javascript
+var Hello = React.createClass({
+	propTypes:{
+	now:React.PropTypes.oneOf(['Red', 'Blue'])
+} 
+});
+```
+You are here restricting the value of the ```now``` property to ```Red``` or ```Blue```.
+
